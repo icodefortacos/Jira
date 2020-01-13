@@ -70,6 +70,7 @@ send "y\r"
 EOF
 
 sudo expect ~/temp.sh
+rm -v ~/temp.sh 
 
 sudo cat >> /etc/mysql/mysql.conf.d/mysqld.cnf <<EOL
 default-storage-engine=INNODB
